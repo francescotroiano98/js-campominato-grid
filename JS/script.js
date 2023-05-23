@@ -4,7 +4,8 @@ const buttonPlay = document.getElementById("play");
 
 buttonPlay.addEventListener("click", function(){
 
-    
+boxElement.innerHTML = "";
+
 for (let i = 1; i <= 100; i++) {
     createBox(i);
     
