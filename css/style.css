@@ -19,10 +19,15 @@ h1{
 
 }
 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:calc( 100% / 10);
     height: calc(100% /10);
     border: 2px solid white;
     background-color: red;
+    font-weight: bold;
+    font-size: larger;
 
 }
 .number-style{
