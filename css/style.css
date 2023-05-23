@@ -28,5 +28,10 @@ h1{
 .number-style{
     text-align: center;
     font-weight: bold;
-    
+
+}
+button{
+    padding: 2em;
+    font-size: larger;
+    font-weight: bold;
 }

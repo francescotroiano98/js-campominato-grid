@@ -18,7 +18,7 @@ function createBox(){
   let newBoxElement = document.createElement("div");
 
   newBoxElement.classList.add("box");
-
+    
   boxElement.appendChild(newBoxElement);
 
   return newBoxElement;
