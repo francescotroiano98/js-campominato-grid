@@ -23,6 +23,14 @@ function createBox(number){
     
   boxElement.appendChild(newBoxElement);
 
+  newBoxElement.addEventListener("click", function() { //added evenlistener for change
+
+  newBoxElement.classList.toggle("selected");
+
+  console.log(number);
+
+});
+
   return newBoxElement;
 
 
