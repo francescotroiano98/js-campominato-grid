@@ -4,35 +4,36 @@ const buttonPlay = document.getElementById("play");
 
 buttonPlay.addEventListener("click", function(){
 
-boxElement.innerHTML = "";
+    boxElement.innerHTML = "";
+    console.clear();
 
-for (let i = 1; i <= 100; i++) {
-    createBox(i);
-    
-  }
+    for (let i = 1; i <= 100; i++) {
+        createBox(i);
+        
+    }
 
 
 });
 
 function createBox(number){
 
-  let newBoxElement = document.createElement("div");
+    let newBoxElement = document.createElement("div");
 
-  newBoxElement.classList.add("box");
+    newBoxElement.classList.add("box");
 
-  newBoxElement.innerHTML = number;
-    
-  boxElement.appendChild(newBoxElement);
+    newBoxElement.innerHTML = number;
+        
+    boxElement.appendChild(newBoxElement);
 
-  newBoxElement.addEventListener("click", function() { //added evenlistener for change
+    newBoxElement.addEventListener("click", function() { //added evenlistener for change
 
-  newBoxElement.classList.toggle("selected");
+        newBoxElement.classList.toggle("selected");
 
-  console.log(number);
+        console.log(number);
 
-});
+    });
 
-  return newBoxElement;
+    return newBoxElement;
 
 
 }
